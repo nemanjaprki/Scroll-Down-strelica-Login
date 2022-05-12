@@ -1,0 +1,219 @@
+ html { 
+     scroll-behavior: smooth;
+ }  
+  body { 
+      margin: 0;
+  }
+  
+  #one { 
+    width: auto; 
+    height: 752px;
+    background-color: rgb(107, 129, 129); 
+
+
+}  
+.login-button button {  
+    width: 55px; 
+    height: 32px;
+    margin-left: 720px;    
+    border: 1px solid rgb(221, 221, 221); 
+    border-radius: 5px;
+    background-color: rgb(78, 95, 105);
+    color: rgb(136, 177, 138);
+}   
+.login-button button:hover { 
+    border: 1px solid rgb(130, 182, 101);
+}
+.login-form1 {  
+    width: 320px; 
+    height: 380px;
+    margin: 80px 0 0 600px;   
+    padding: 10px 0 0 0; 
+    border-radius: 6px; 
+    background-color: white;
+}  
+.inputi { 
+    margin: 0 0 0 40px;
+} 
+.inputi input { 
+    width: 230px; 
+    height: 30px;    
+    border-radius: 5px;  
+    color: white;
+    background-color: rgb(129, 183, 144);
+}  
+.inputi p {  
+    color: rgb(71, 108, 70); 
+    
+} 
+.inputi button { 
+    background-color: rgba(165, 108, 96, 0.075); 
+    color: rgb(71, 108, 70); 
+    border-radius: 5px;  
+    margin: 0 70px 0 20px;
+}
+
+
+.login-hidden {
+    display: none;
+} 
+#poruka { 
+    color: rgb(143, 62, 62); 
+    margin: 10px 0 0 115px;
+}
+#next-section { 
+    width: auto; 
+    height: 752px;
+    background-color: rgb(29, 43, 43);
+}  
+#tree { 
+    width: auto; 
+    height: 752px;
+    background-color: rgb(59, 117, 100);
+
+} 
+.peage { 
+    margin: 0 0 0 680px;   
+    padding-top: 50px;
+    color: rgb(66, 101, 102);
+}
+.scroll-down-arrow { 
+    position: absolute; 
+    bottom: 24px; 
+    width: 46px; 
+    height: 46px; 
+     
+    margin: 0 auto; 
+    left: 0; 
+    right: 0; 
+
+     border: 2px solid white; 
+     border-radius: 100%;
+} 
+.scroll-down-arrow::before {  
+    position: absolute; 
+    content: " "; 
+    width: 16px; 
+    height: 16px; 
+    left: 0; 
+    right: 0; 
+    top: 10px; 
+    margin: 0 auto; 
+    border-left: 2px solid white; 
+    border-bottom: 2px solid white; 
+    transform: rotate(-45deg);
+}  
+.scroll-down-arrow:hover { 
+    animation: bounce 2s infinite running; 
+    cursor: pointer;
+}
+   
+#next-section .scroll-down-arrow {   
+      position: absolute;  
+      top: 1434px;
+      bottom: 0; 
+      width: 46px; 
+      height: 46px; 
+       
+      margin: 0 auto; 
+      left: 50px; 
+      right: 0; 
+  
+       border: 2px solid white; 
+       border-radius: 100%;
+  } 
+  #next-section .scroll-down-arrow::before {  
+      position: absolute; 
+      content: " "; 
+      width: 16px; 
+      height: 16px; 
+      left: 0; 
+      right: 0; 
+      top: 10px; 
+      margin: 0 auto; 
+      border-left: 2px solid white; 
+      border-bottom: 2px solid white; 
+      transform: rotate(-45deg);
+  }    
+  #next-section .scroll-down-arrow:hover { 
+    animation: bounce 2s infinite running;  
+    cursor: pointer;
+  }
+  #next-section .scroll-up-arrow {   
+     
+     position: absolute;  
+     top: 1434px;
+     bottom: 0; 
+     width: 46px; 
+     height: 46px; 
+      
+     margin: 0 auto; 
+     left: 0; 
+     right: 100px; 
+ 
+      border: 2px solid white; 
+      border-radius: 100%;
+ } 
+  #next-section .scroll-up-arrow::before {  
+     position: absolute; 
+     content: " "; 
+     width: 16px; 
+     height: 16px; 
+     left: 0; 
+     right: 0; 
+     top: 15px; 
+     margin: 0 auto; 
+     border-left: 2px solid white; 
+     border-bottom: 2px solid white; 
+     transform: rotate(135deg);
+ }   
+ #next-section .scroll-up-arrow:hover { 
+    animation: bounce 2s infinite running; 
+ }
+ .scroll-up-arrow {   
+     
+      position: absolute;  
+      top: 2172px;
+      bottom: 0; 
+      width: 46px; 
+      height: 46px; 
+       
+      margin: 0 auto; 
+      left: 0; 
+      right: 0; 
+  
+       border: 2px solid white; 
+       border-radius: 100%;
+  } 
+ .scroll-up-arrow::before {  
+      position: absolute; 
+      content: " "; 
+      width: 16px; 
+      height: 16px; 
+      left: 0; 
+      right: 0; 
+      top: 15px; 
+      margin: 0 auto; 
+      border-left: 2px solid white; 
+      border-bottom: 2px solid white; 
+      transform: rotate(135deg);
+  }  
+  .scroll-up-arrow:hover {  
+    animation: bounce 2s infinite running;   
+    cursor: pointer; 
+  }
+@keyframes bounce { 
+    0%, 
+    20%, 
+    50%, 
+    80%, 
+    100% { 
+        transform: translateY(0);
+    } 
+    20% { 
+        transform: translateY(-15px);
+    } 
+    60% { 
+        transform: rotateY(150deg);
+    }
+} 

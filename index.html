@@ -1,0 +1,106 @@
+ <!DOCTYPE html> 
+  
+<html lang="en">
+<meta charset="UTF-8"> 
+  
+<head>  
+    <meta charset="UTF-8">
+    <title>Strelica</title> 
+    <link href="style.css" rel="stylesheet"> 
+</head> 
+ <body> 
+ 
+   <div id="one">  
+       <div class="peage"><h1>Peage one</h1></div> 
+       <div class="login-button"> <button onclick="loginShow()">Login</button> </div>
+        
+       <div class="login-form1 login-hidden" id=login-form1>   
+
+           <div class="inputi">  
+               <p> Frst Name</p>
+               <input id="login-form-1-frstName" type="text">  
+           </div> <br>   
+
+           <div class="inputi"> 
+               <p>Last Name</p> 
+               <input id="login-form-1-lastName" type="text">  
+          </div> <br>  
+
+           <div class="inputi"> 
+               <p>Password</p> 
+               <input id="login-form-1-password" type="password"> 
+          </div> <br>  
+
+          <div class="inputi">
+           <button onclick="tryLogin()">Login</button>  
+           <button onclick="loginShow2()">Back</button>
+           </div>  
+            
+           <div id="poruka"></div>
+
+       </div>
+
+       <a class="scroll-down-arrow" href="#next-section"></a>
+   </div>   
+
+   <div id="next-section">   
+    <div class="peage"><h1>Peage two</h1></div>
+    <a class="scroll-down-arrow" href="#tree"></a> 
+    <a class="scroll-up-arrow" href="#one"></a>
+   </div>  
+
+   <div id="tree">   
+    <div class="peage"><h1>Peage tree</h1></div>
+    <a class="scroll-up-arrow" href="#next-section"></a>
+   </div> 
+
+  <script>  
+      var users = [ 
+          {frstname: "Nemanja", lastname: "Prvanovic", password: "123"}, 
+          {frstname: "Boban", lastname: "Prvanovic", password: "1234"}, 
+          {frstname: "Dragana", lastname: "Prvanovic", password: "12345"}
+      ]
+       
+
+     function loginShow() { 
+         var formDiv = document.getElementById("login-form1"); 
+         if(formDiv.classList.contains("login-hidden")) { 
+             formDiv.classList.remove("login-hidden")
+         } 
+         else{ 
+             formDiv.classList.add("login-hidden")
+         }
+     }   
+     function loginShow2() { 
+           var formDiv2 = document.getElementById("login-form1"); 
+           if(formDiv2.classList.add("login-hidden"));
+           
+       }
+
+     function tryLogin() { 
+         var frstname = document.getElementById("login-form-1-frstName").value; 
+         var lastname = document.getElementById("login-form-1-lastName").value; 
+         var password = document.getElementById("login-form-1-password").value;
+         var uspeh = false;
+          
+         for(var i =0; i<users.length; i++) { 
+             if(users[i].frstname == frstname && users[i].lastname == lastname || users[i].password == password ) { 
+                 uspeh = true; 
+                 break;
+           }
+         } 
+            if(uspeh) { 
+                loginShow2();
+           } 
+            else { 
+                document.getElementById("poruka").innerHTML = "Login Failed";
+            }
+         } 
+
+     
+ 
+ </script>
+
+</body> 
+ 
+</html>
